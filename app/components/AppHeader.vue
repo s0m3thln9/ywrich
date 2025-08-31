@@ -13,10 +13,22 @@
       <div class="flex items-center gap-16">
         <nav>
           <ul class="flex items-center gap-8">
-            <li class="cursor-pointer">О нас</li>
-            <li class="cursor-pointer">Рекламодателям</li>
-            <li class="cursor-pointer">Плюсы</li>
-            <li class="cursor-pointer">Вакансии</li>
+            <li class="cursor-pointer relative pb-1 group">
+              О нас
+              <div class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            </li>
+            <li class="cursor-pointer relative pb-1 group">
+              Рекламодателям
+              <div class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            </li>
+            <li class="cursor-pointer relative pb-1 group">
+              Плюсы
+              <div class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            </li>
+            <li class="cursor-pointer relative pb-1 group">
+              Вакансии
+              <div class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            </li>
           </ul>
         </nav>
         <div class="flex items-center gap-6">

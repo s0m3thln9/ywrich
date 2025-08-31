@@ -10,7 +10,7 @@
           <span class="font-[Open_Sans] text-xl text-[#F3F3F3] uppercase mt-4 max-w-[520px]"
             >международная медиабаинговая компания являющаяся одним из лидеров в i-Gaming</span
           >
-          <button class="mt-12">Вступить в команду</button>
+          <AppButton content="Вступить в команду" extended custom-class="mt-12" />
         </div>
       </div>
     </div>
