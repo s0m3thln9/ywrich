@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="pb-24 flex items-center justify-center">
+  <div class="pt-12 pb-24 flex items-center justify-center">
     <div class="max-w-[1170px] w-full flex flex-col gap-12">
       <h2 class="font-[Unbounded] font-black text-[#F3F3F3] text-[80px] uppercase">О нас</h2>
 	    <div class="flex flex-col">
