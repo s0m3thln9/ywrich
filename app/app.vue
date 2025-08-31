@@ -20,6 +20,7 @@
     </div>
     <AppHeader />
     <AppHero />
+	  <AppAbout />
   </div>
 </template>
 <script setup lang="ts"></script>
