@@ -3,7 +3,7 @@
 <template>
   <div class="relative py-24 flex items-center justify-center select-none">
     <NuxtImg
-      src="cloud-4.png"
+      src="/cloud-4.png"
       class="absolute top-0 -translate-y-1/4 right-0"
       draggable="false"
     />

@@ -11,7 +11,7 @@
     />
     <div class="max-w-[1170px] w-full flex items-center justify-between z-10">
       <NuxtImg
-        src="footer-logo.svg"
+        src="/footer-logo.svg"
         class="cursor-pointer"
         draggable="false"
       />
