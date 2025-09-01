@@ -1,8 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <footer class="py-24 font-[Open_Sans] text-[#F3F3F3] text-xl flex items-center justify-center">
-    <div class="max-w-[1170px] w-full flex items-center justify-between">
+  <footer
+    class="py-24 font-[Open_Sans] text-[#F3F3F3] text-xl flex items-center justify-center relative border-t border-[#F3F3F3]"
+  >
+    <div class="max-w-[1170px] w-full flex items-center justify-between z-10">
       <NuxtImg
         src="footer-logo.svg"
         class="cursor-pointer"
@@ -52,6 +54,10 @@
         <span class="font-[Unbounded] font-black text-[#CBCBCB] text-xs uppercase">Telegram</span>
       </div>
     </div>
+    <NuxtImg
+      src="/cloud-5.png"
+      class="absolute bottom-0 left-0 w-full z-0"
+    />
   </footer>
 </template>
 

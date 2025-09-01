@@ -2,8 +2,12 @@
 
 <template>
   <div class="relative py-24 flex items-center justify-center">
+    <NuxtImg
+      src="cloud-4.png"
+      class="absolute top-0 -translate-y-1/4 right-0"
+    />
     <div class="max-w-[1170px] w-full flex flex-col gap-12">
-      <h2 class="uppercase text-[80px] text-[#F3F3F3] font-[Unbounded] font-black">Наши плюсы</h2>
+      <h2 class="uppercase text-[80px] text-[#F3F3F3] font-[Unbounded] font-black">Вакансии</h2>
       <div>
         <div class="absolute w-full h-[1px] bg-[#F3F3F3] left-0" />
         <div class="flex items-center">

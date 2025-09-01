@@ -7,7 +7,11 @@
       />
       <NuxtImg
         src="/lines-2.svg"
-        class="absolute top-0 translate-y-[80%] left-0 w-full object-cover z-0"
+        class="absolute top-0 translate-y-[70%] left-0 w-full object-cover z-0"
+      />
+      <NuxtImg
+        src="/lines-3.svg"
+        class="absolute top-0 translate-y-[167%] left-0 w-full object-cover z-0"
       />
       <NuxtImg
         src="/cloud-1.png"

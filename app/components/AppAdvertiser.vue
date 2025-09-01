@@ -2,7 +2,11 @@
 
 <template>
   <div class="relative flex items-center justify-center">
-    <div class="max-w-[1170px] w-full flex flex-col gap-5">
+    <NuxtImg
+      src="cloud-3.png"
+      class="absolute top-0 left-0 w-full z-10"
+    />
+    <div class="max-w-[1170px] w-full flex flex-col gap-5 z-20">
       <h2 class="uppercase text-[80px] text-[#F3F3F3] font-[Unbounded] font-black">Рекламодателям</h2>
       <div class="flex gap-10">
         <NuxtImg
