@@ -1,10 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="relative flex items-center justify-center">
+  <div class="relative flex items-center justify-center select-none">
     <NuxtImg
       src="cloud-3.png"
       class="absolute top-0 left-0 w-full z-10"
+      draggable="false"
     />
     <div class="max-w-[1170px] w-full flex flex-col gap-5 z-20">
       <h2 class="uppercase text-[80px] text-[#F3F3F3] font-[Unbounded] font-black">Рекламодателям</h2>
@@ -12,6 +13,7 @@
         <NuxtImg
           src="/chain.png"
           class="w-[534px] h-[591px] -ml-40"
+          draggable="false"
         />
         <div class="flex flex-col gap-12 font-[Open_Sans] border-y border-[#F3F3F3] pl-16 py-16">
           <div class="flex flex-col gap-5">

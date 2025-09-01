@@ -1,10 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="relative pt-12 pb-24 flex items-center justify-center">
+  <div class="relative pt-12 pb-24 flex items-center justify-center select-none">
     <NuxtImg
       src="/light-2.png"
       class="absolute top-0 right-0 z-0 h-[1713px]"
+      draggable="false"
     />
     <div class="max-w-[1170px] w-full flex flex-col gap-12">
       <h2 class="font-[Unbounded] font-black text-[#F3F3F3] text-[80px] uppercase">О нас</h2>

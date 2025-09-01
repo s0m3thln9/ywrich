@@ -2,16 +2,18 @@
 
 <template>
   <footer
-    class="py-24 font-[Open_Sans] text-[#F3F3F3] text-xl flex items-center justify-center relative border-t border-[#F3F3F3]"
+    class="py-24 font-[Open_Sans] text-[#F3F3F3] text-xl flex items-center justify-center relative border-t border-[#F3F3F3] select-none"
   >
     <NuxtImg
       src="/light-4.png"
       class="absolute bottom-0 right-0 h-[1290px] z-0"
+      draggable="false"
     />
     <div class="max-w-[1170px] w-full flex items-center justify-between z-10">
       <NuxtImg
         src="footer-logo.svg"
         class="cursor-pointer"
+        draggable="false"
       />
       <div class="w-[1px] self-stretch bg-[#F3F3F3]" />
       <nav>
@@ -47,6 +49,7 @@
         <NuxtImg
           src="inst.svg"
           class="w-9 h-9"
+          draggable="false"
         />
         <span class="font-[Unbounded] font-black text-[#CBCBCB] text-xs uppercase">Instagram</span>
       </div>
@@ -54,6 +57,7 @@
         <NuxtImg
           src="/tg.svg"
           class="w-9 h-9"
+          draggable="false"
         />
         <span class="font-[Unbounded] font-black text-[#CBCBCB] text-xs uppercase">Telegram</span>
       </div>
@@ -61,6 +65,7 @@
     <NuxtImg
       src="/cloud-5.png"
       class="absolute bottom-0 left-0 w-full z-0"
+      draggable="false"
     />
   </footer>
 </template>
