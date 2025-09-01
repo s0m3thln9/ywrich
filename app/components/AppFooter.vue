@@ -4,6 +4,10 @@
   <footer
     class="py-24 font-[Open_Sans] text-[#F3F3F3] text-xl flex items-center justify-center relative border-t border-[#F3F3F3]"
   >
+    <NuxtImg
+      src="/light-4.png"
+      class="absolute bottom-0 right-0 h-[1290px] z-0"
+    />
     <div class="max-w-[1170px] w-full flex items-center justify-between z-10">
       <NuxtImg
         src="footer-logo.svg"

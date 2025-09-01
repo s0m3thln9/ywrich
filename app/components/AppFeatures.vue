@@ -2,6 +2,10 @@
 
 <template>
   <div class="relative flex items-center justify-center py-24">
+    <NuxtImg
+      src="/light-3.png"
+      class="absolute top-0 left-0 h-[1304px] z-0"
+    />
     <div class="max-w-[1170px] w-full flex flex-col gap-12">
       <h2 class="uppercase text-[80px] text-[#F3F3F3] font-[Unbounded] font-black">Наши плюсы</h2>
       <div class="grid grid-cols-2 gap-10 font-[Open_Sans]">

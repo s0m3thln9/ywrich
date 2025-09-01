@@ -6,6 +6,10 @@
         class="absolute top-0 left-0 w-full object-cover z-0"
       />
       <NuxtImg
+        src="/light-1.png"
+        class="absolute top-0 left-0 z-0 h-[1565px]"
+      />
+      <NuxtImg
         src="/lines-2.svg"
         class="absolute top-0 translate-y-[70%] left-0 w-full object-cover z-0"
       />
