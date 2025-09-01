@@ -5,6 +5,7 @@
     <div class="max-w-[1170px] w-full flex flex-col gap-12">
       <h2 class="uppercase text-[80px] text-[#F3F3F3] font-[Unbounded] font-black">Наши плюсы</h2>
       <div>
+        <div class="absolute w-full h-[1px] bg-[#F3F3F3] left-0" />
         <div class="flex items-center">
           <div class="flex flex-col gap-5 pb-5 bg-[#131313] border border-[#F3F3F3]">
             <NuxtImg src="/v1.png" />
@@ -67,6 +68,7 @@
             </div>
           </div>
         </div>
+        <div class="absolute w-full h-[1px] bg-[#F3F3F3] left-0" />
       </div>
     </div>
   </div>

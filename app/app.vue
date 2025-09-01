@@ -32,6 +32,7 @@
     <AppAdvertiser />
     <AppFeatures />
     <AppVacancies />
+    <AppFooter />
   </div>
 </template>
 <script setup lang="ts"></script>
