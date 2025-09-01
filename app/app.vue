@@ -31,6 +31,7 @@
     <AppAbout />
     <AppAdvertiser />
     <AppFeatures />
+    <AppVacancies />
   </div>
 </template>
 <script setup lang="ts"></script>
