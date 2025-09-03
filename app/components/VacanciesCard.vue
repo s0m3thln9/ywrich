@@ -3,7 +3,10 @@
 	defineProps<{
 		content: VacanciesCard
 	}>()
-	const isHovered = ref(false);
+	const isHovered = ref(false)
+	const openTelegramBot = () => {
+		window.open("https://t.me/YWRteam_job_bot", "_blank")
+	}
 </script>
 
 <template>
@@ -11,6 +14,7 @@
 		class="flex flex-col gap-5 pb-5 cursor-pointer bg-[#131313] hover:bg-[#C9FF33] border border-[#F3F3F3] hover:border-[#C9FF33] text-[#F3F3F3] hover:text-[#101010] z-20 transition-all duration-300"
 		@mouseenter="isHovered = true"
 		@mouseleave="isHovered = false"
+		@click="openTelegramBot"
 	>
 		<div class="flex flex-col bg-[#131313]">
 			<NuxtImg

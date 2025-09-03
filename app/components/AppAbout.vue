@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const openTelegramBot = () => {
+	window.open("https://t.me/YWRteam_job_bot", "_blank")
+}
+</script>
 
 <template>
   <div id="about" class="relative pt-12 pb-24 flex items-center justify-center select-none">
@@ -55,6 +59,7 @@
       <AppButton
         content="Вступить в команду"
         custom-class="self-center"
+        @click="openTelegramBot"
       />
     </div>
   </div>

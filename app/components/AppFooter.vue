@@ -5,6 +5,9 @@ const scrollToSection = (id: string) => {
 		el.scrollIntoView({ behavior: 'smooth' })
 	}
 }
+const scrollToTop = () => {
+	window.scrollTo({top: 0, behavior: 'smooth'})
+}
 </script>
 
 <template>
@@ -21,6 +24,7 @@ const scrollToSection = (id: string) => {
         src="/footer-logo.svg"
         class="cursor-pointer"
         draggable="false"
+        @click="scrollToTop"
       />
       <div class="w-[1px] self-stretch bg-[#F3F3F3]" />
       <nav>
@@ -52,22 +56,24 @@ const scrollToSection = (id: string) => {
         </ul>
       </nav>
       <div class="w-[1px] self-stretch bg-[#F3F3F3]" />
-      <div class="flex flex-col gap-3 items-center py-4 px-2 border-y border-[#F3F3F3] cursor-pointer">
-        <NuxtImg
-          src="inst.svg"
-          class="w-9 h-9"
-          draggable="false"
-        />
+      <a
+	      href="https://www.instagram.com/ywr_traffic?igsh=cDdjMXUxMm5jeXpl&utm_source=qr"
+	      target="_blank"
+	      rel="noopener noreferrer"
+	      class="flex flex-col gap-3 items-center py-4 px-2 border-y border-[#F3F3F3] cursor-pointer"
+      >
+        <NuxtImg src="/inst.svg" class="w-9 h-9" draggable="false" />
         <span class="font-[Unbounded] font-black text-[#CBCBCB] text-xs uppercase">Instagram</span>
-      </div>
-      <div class="flex flex-col gap-3 items-center py-4 px-2 border-y border-[#F3F3F3] cursor-pointer">
-        <NuxtImg
-          src="/tg.svg"
-          class="w-9 h-9"
-          draggable="false"
-        />
+      </a>
+      <a
+	      href="https://t.me/ywrteam"
+	      target="_blank"
+	      rel="noopener noreferrer"
+	      class="flex flex-col gap-3 items-center py-4 px-2 border-y border-[#F3F3F3] cursor-pointer"
+      >
+        <NuxtImg src="/tg.svg" class="w-9 h-9" draggable="false" />
         <span class="font-[Unbounded] font-black text-[#CBCBCB] text-xs uppercase">Telegram</span>
-      </div>
+      </a>
     </div>
     <NuxtImg
       src="/cloud-5.png"

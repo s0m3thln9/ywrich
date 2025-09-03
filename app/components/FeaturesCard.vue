@@ -19,12 +19,12 @@ const isHovered = ref(false)
     <template v-if="content.number === '01'">
       <NuxtImg
         src="/f-cloud-1.png"
-        class="absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-300"
+        class="absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
         :class="isHovered ? 'opacity-100' : 'opacity-0'"
       />
       <div class="absolute -right-8 -top-8 z-10">
         <div
-          class="relative w-[226px] h-[269px] transition-opacity duration-300"
+          class="relative w-[226px] h-[269px] transition-opacity duration-500"
           :class="isHovered ? 'opacity-100' : 'opacity-0'"
         >
           <NuxtImg

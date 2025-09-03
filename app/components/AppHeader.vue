@@ -5,6 +5,9 @@ const scrollToSection = (id: string) => {
 		el.scrollIntoView({ behavior: 'smooth' })
 	}
 }
+const scrollToTop = () => {
+	window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -17,6 +20,7 @@ const scrollToSection = (id: string) => {
         width="74"
         class="cursor-pointer"
         draggable="false"
+        @click="scrollToTop"
       />
       <div class="flex items-center gap-16">
         <nav>
@@ -48,16 +52,12 @@ const scrollToSection = (id: string) => {
           </ul>
         </nav>
         <div class="flex items-center gap-6">
-          <NuxtImg
-            src="/inst.svg"
-            class="cursor-pointer w-7 h-7"
-            draggable="false"
-          />
-          <NuxtImg
-            src="/tg.svg"
-            class="cursor-pointer w-7 h-7"
-            draggable="false"
-          />
+          <a href="https://www.instagram.com/ywr_traffic?igsh=cDdjMXUxMm5jeXpl&utm_source=qr" target="_blank" rel="noopener noreferrer">
+					  <NuxtImg src="/inst.svg" class="cursor-pointer w-7 h-7" draggable="false" />
+					</a>
+					<a href="https://t.me/ywrteam" target="_blank" rel="noopener noreferrer">
+					  <NuxtImg src="/tg.svg" class="cursor-pointer w-7 h-7" draggable="false" />
+					</a>
         </div>
       </div>
     </div>

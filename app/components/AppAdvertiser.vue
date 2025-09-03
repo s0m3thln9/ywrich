@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const openTelegramBot = () => {
+	window.open("https://t.me/YWR_offers_bot", "_blank")
+}
+</script>
 
 <template>
   <div id="advertiser" class="relative flex items-center justify-center select-none">
@@ -35,6 +39,7 @@
               content="Оставить информацию"
               extended
               custom-class="mt-12"
+              @click="openTelegramBot"
             />
           </div>
         </div>

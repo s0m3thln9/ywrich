@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const openTelegramBot = () => {
+	window.open("https://t.me/YWRteam_job_bot", "_blank")
+}
+</script>
 
 <template>
   <div class="py-24 flex items-center justify-center select-none">
@@ -14,6 +18,7 @@
             content="Вступить в команду"
             extended
             custom-class="mt-12"
+            @click="openTelegramBot"
           />
         </div>
       </div>
