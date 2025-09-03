@@ -5,14 +5,30 @@ const scrollToSection = (id: string) => {
 		el.scrollIntoView({ behavior: 'smooth' })
 	}
 }
+
 const scrollToTop = () => {
 	window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
+const hasScrolled = ref(false)
+
+onMounted(() => {
+	window.addEventListener("scroll", handleScroll)
+})
+
+onUnmounted(() => {
+	window.removeEventListener("scroll", handleScroll)
+})
+
+const handleScroll = () => {
+	hasScrolled.value = window.scrollY > 10
 }
 </script>
 
 <template>
   <header
-    class="py-5 font-[Open_Sans] text-[#F3F3F3] text-xl border-b border-[#F3F3F3] flex items-center justify-center select-none"
+    class="fixed top-0 left-0 w-full z-50 py-5 font-[Open_Sans] text-[#F3F3F3] text-xl border-b border-[#F3F3F3] flex items-center justify-center select-none transition-all duration-300"
+    :class="hasScrolled ? 'bg-[#090909]' : 'bg-transparent'"
   >
     <div class="max-w-[1170px] w-full flex items-center justify-between">
       <NuxtImg
