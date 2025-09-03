@@ -8,7 +8,7 @@ const openTelegramBot = () => {
   <div id="advertiser" class="relative pt-24 flex items-center justify-center select-none">
     <NuxtImg
       src="/cloud-3.png"
-      class="absolute top-0 left-0 w-full z-10"
+      class="absolute top-0 left-0 w-full z-10 translate-y-24"
       draggable="false"
     />
     <div class="max-w-[1170px] w-full flex flex-col gap-5 z-20">
