@@ -5,7 +5,7 @@ const openTelegramBot = () => {
 </script>
 
 <template>
-  <div class="py-24 flex items-center justify-center select-none">
+  <div class="pt-24 pb-12 flex items-center justify-center select-none">
     <div class="max-w-[1170px] w-full">
       <div class="flex flex-col">
         <span class="font-[Unbounded] text-[100px] text-[#F3F3F3] font-black uppercase">Ywr</span>

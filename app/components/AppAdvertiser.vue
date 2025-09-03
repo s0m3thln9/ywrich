@@ -5,7 +5,7 @@ const openTelegramBot = () => {
 </script>
 
 <template>
-  <div id="advertiser" class="relative flex items-center justify-center select-none">
+  <div id="advertiser" class="relative pt-24 flex items-center justify-center select-none">
     <NuxtImg
       src="/cloud-3.png"
       class="absolute top-0 left-0 w-full z-10"

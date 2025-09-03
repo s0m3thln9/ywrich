@@ -10,7 +10,7 @@ const features: FeaturesCard[] = [
 </script>
 
 <template>
-  <div id="features" class="relative flex items-center justify-center py-24 select-none">
+  <div id="features" class="relative flex items-center justify-center pt-24 select-none">
     <NuxtImg
       src="/light-3.png"
       class="absolute top-0 left-0 h-[1304px] z-0"
