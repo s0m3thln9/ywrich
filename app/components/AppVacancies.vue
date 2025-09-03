@@ -16,7 +16,7 @@ const largeCards: VacanciesCard[] = [
 </script>
 
 <template>
-  <div class="relative pb-24 flex items-center justify-center select-none">
+  <div id="vacancies" class="relative pb-24 flex items-center justify-center select-none">
     <NuxtImg
 	    src="/cloud-4.png"
 	    class="absolute top-0 -translate-y-1/2 right-0 h-[639px] z-30 pointer-events-none"

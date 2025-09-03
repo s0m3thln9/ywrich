@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="relative pt-12 pb-24 flex items-center justify-center select-none">
+  <div id="about" class="relative pt-12 pb-24 flex items-center justify-center select-none">
     <NuxtImg
       src="/light-2.png"
       class="absolute top-0 right-0 z-0 h-[1713px]"

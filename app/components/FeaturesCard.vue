@@ -22,9 +22,9 @@ const isHovered = ref(false)
         class="absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-300"
         :class="isHovered ? 'opacity-100' : 'opacity-0'"
       />
-      <div class="absolute -right-8 -top-8 z-10 transition-opacity duration-300">
+      <div class="absolute -right-8 -top-8 z-10">
         <div
-          class="relative w-[226px] h-[269px]"
+          class="relative w-[226px] h-[269px] transition-opacity duration-300"
           :class="isHovered ? 'opacity-100' : 'opacity-0'"
         >
           <NuxtImg
