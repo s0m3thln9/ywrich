@@ -36,7 +36,7 @@ onMounted(() => {
       />
       <NuxtImg
         src="/lines-2.svg"
-        class="absolute top-0 translate-y-[70%] left-0 w-full z-0"
+        class="absolute top-0 translate-y-[70%] left-0 w-full z-0 md:hidden"
         draggable="false"
       />
       <NuxtImg
@@ -50,10 +50,30 @@ onMounted(() => {
         draggable="false"
       />
       <NuxtImg
-        src="/lines-3-xl.svg"
-        class="absolute top-0 translate-y-[167%] left-0 w-full z-0"
-        draggable="false"
+	      src="/lines-3.svg"
+	      class="absolute top-0 translate-y-[167%] left-0 w-full z-0 md:hidden"
+	      draggable="false"
       />
+      <NuxtImg
+	      src="/lines-3-md.svg"
+	      class="absolute top-0 translate-y-[167%] left-0 z-0 w-full hidden md:block xl:hidden"
+	      draggable="false"
+      />
+      <NuxtImg
+	      src="/lines-3-xl.svg"
+	      class="absolute top-0 translate-y-[167%] left-0 z-0 w-full hidden xl:block"
+	      draggable="false"
+      />
+	    <NuxtImg
+		    src="/lines-4.svg"
+		    class="absolute top-0 translate-y-[267%] left-0 w-full z-0 md:hidden"
+		    draggable="false"
+	    />
+	    <NuxtImg
+		    src="/lines-4.svg"
+		    class="absolute top-0 translate-y-[367%] left-0 w-full z-0 md:hidden"
+		    draggable="false"
+	    />
       <NuxtImg
         src="/cloud-1.png"
         class="absolute top-0 left-0 w-full z-20 cloud-1"

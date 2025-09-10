@@ -19,6 +19,11 @@ const scrollToTop = () => {
       class="absolute bottom-0 right-0 h-[1290px] z-0"
       draggable="false"
     />
+	  <NuxtImg
+		  src="/light-4.png"
+		  class="absolute bottom-0 translate-y-20 left-0 h-[1290px] rotate-180 z-0 md:hidden"
+		  draggable="false"
+	  />
     <div
       class="max-w-[1170px] w-full flex flex-col md:flex-row items-center max-md:gap-5 md:items-start justify-between z-10"
     >
@@ -127,9 +132,14 @@ const scrollToTop = () => {
     </div>
     <NuxtImg
       src="/cloud-5.png"
-      class="absolute bottom-0 left-0 w-full z-0"
+      class="absolute bottom-0 left-0 w-full z-0 hidden md:flex"
       draggable="false"
     />
+	  <NuxtImg
+		  src="/cloud-6.png"
+		  class="absolute bottom-0 left-0 w-full z-0 md:hidden"
+		  draggable="false"
+	  />
   </footer>
 </template>
 

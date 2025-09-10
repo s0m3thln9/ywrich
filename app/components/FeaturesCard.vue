@@ -35,7 +35,7 @@ const isHovered = ref(false)
       <div class="absolute right-5 xl:-right-8 -bottom-7 md:-bottom-4 xl:-top-8 z-10">
         <div class="xl:hidden relative w-[223px] h-[235px]">
           <NuxtImg
-            src="/f-1.png"
+            src="/f-1.svg"
             class="absolute top-0 left-0 w-full h-full"
           />
         </div>
@@ -83,7 +83,7 @@ const isHovered = ref(false)
       <div class="absolute right-4 xl:-right-8 -bottom-3 xl:-top-8 z-10 transition-opacity duration-300">
         <div class="xl:hidden relative w-[226px] h-[171px]">
           <NuxtImg
-            src="/f-2.png"
+            src="/f-2.svg"
             class="absolute top-0 left-0 w-full h-full"
           />
         </div>
@@ -123,7 +123,7 @@ const isHovered = ref(false)
       <div class="absolute right-4 xl:-right-8 -bottom-4 md:-bottom-2 xl:-top-8 z-10 transition-opacity duration-300">
         <div class="xl:hidden relative w-[235px] h-[255px]">
           <NuxtImg
-            src="/f-3.png"
+            src="/f-3.svg"
             class="absolute top-0 left-0 w-full h-full"
           />
         </div>
@@ -169,7 +169,7 @@ const isHovered = ref(false)
       >
         <div class="xl:hidden relative w-[243px] h-[235px]">
           <NuxtImg
-            src="/f-4.png"
+            src="/f-4.svg"
             class="absolute top-0 left-0 w-full h-full"
           />
         </div>

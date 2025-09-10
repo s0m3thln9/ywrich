@@ -21,7 +21,7 @@ const openTelegramBot = () => {
     />
     <div class="max-w-[1170px] w-full flex flex-col gap-5 z-20">
       <h2
-        class="uppercase text-[39px] md:text-[50px] xl:text-[80px] text-[#F3F3F3] font-[Unbounded] font-black break-all"
+        class="uppercase text-[20px] md:text-[50px] xl:text-[80px] text-[#F3F3F3] font-[Unbounded] font-black"
       >
         Рекламодателям
       </h2>
@@ -57,7 +57,7 @@ const openTelegramBot = () => {
             <AppButton
               content="Оставить информацию"
               extended
-              custom-class="hidden xl:block xl:mt-9"
+              custom-class="hidden xl:flex xl:mt-9"
               @click="openTelegramBot"
             />
             <AppButton
