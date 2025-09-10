@@ -31,7 +31,7 @@ onMounted(() => {
       />
       <NuxtImg
         src="/light-1.png"
-        class="absolute top-[500px] md:top-20 xl:top-0 md:-left-10 xl:left-0 z-[5] md:h-[1200px] xl:h-[1565px] light"
+        class="absolute top-[400px] md:top-20 xl:top-0 md:-left-10 xl:left-0 z-[5] md:h-[1200px] xl:h-[1565px] light"
         draggable="false"
       />
       <NuxtImg
