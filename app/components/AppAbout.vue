@@ -11,7 +11,7 @@ const openTelegramBot = () => {
   >
     <NuxtImg
       src="/light-2.png"
-      class="absolute top-[100px] md:top-0 right-0 z-0 h-[1713px]"
+      class="absolute top-0 md:top-0 right-0 z-0 h-[1513px]"
       draggable="false"
     />
     <div class="max-w-[1170px] w-full flex flex-col gap-7 xl:gap-12">

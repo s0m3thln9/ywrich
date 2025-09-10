@@ -12,7 +12,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative overflow-hidden">
     <div class="absolute w-full min-h-screen h-full -z-10 bg-[#090909] overflow-hidden top-0 left-0">
       <NuxtImg
         src="/lines-1.svg"
@@ -31,7 +31,7 @@ onMounted(() => {
       />
       <NuxtImg
         src="/light-1.png"
-        class="absolute top-[400px] md:top-20 xl:top-0 md:-left-10 xl:left-0 z-[5] md:h-[1200px] xl:h-[1565px] light"
+        class="absolute top-[200px] md:top-20 xl:top-0 md:-left-10 xl:left-0 z-[5] md:h-[1200px] xl:h-[1565px] light"
         draggable="false"
       />
       <NuxtImg
