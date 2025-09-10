@@ -16,11 +16,13 @@ const openTelegramBot = () => {
     />
     <NuxtImg
       src="/light-adv.png"
-      class="absolute top-0 -right-20 h-[1000px] z-10"
+      class="md:hidden absolute top-0 -right-20 h-[1000px] z-10"
       draggable="false"
     />
     <div class="max-w-[1170px] w-full flex flex-col gap-5 z-20">
-      <h2 class="uppercase text-[40px] md:text-[50px] xl:text-[80px] text-[#F3F3F3] font-[Unbounded] font-black">
+      <h2
+        class="uppercase text-[39px] md:text-[50px] xl:text-[80px] text-[#F3F3F3] font-[Unbounded] font-black break-all"
+      >
         Рекламодателям
       </h2>
       <div class="flex flex-col items-center md:flex-row gap-10">
@@ -46,7 +48,7 @@ const openTelegramBot = () => {
               мы заставляем наших клиентов становится лучше благодаря нашим нестандартным стратегиям к продвижению
             </p>
           </div>
-          <div class="flex md:hidden xl:flex flex-col gap-3 border-l border-[#F3F3F3] xl:ml-10 p-4 xl:pl-6">
+          <div class="flex md:hidden xl:flex flex-col gap-3 border-l border-[#F3F3F3] xl:ml-10 pl-4 xl:pl-6">
             <h4 class="uppercase text-[22px] xl:text-[32px] text-[#F3F3F3] font-extrabold">вы рекламодатель ?</h4>
             <p class="uppercase text-[15px] xl:text-[22px] text-[#CBCBCB]">
               оставьте информацию о себе и мы обязательно найдем решение для
@@ -55,7 +57,13 @@ const openTelegramBot = () => {
             <AppButton
               content="Оставить информацию"
               extended
-              custom-class="mt-4 xl:mt-9"
+              custom-class="hidden xl:block xl:mt-9"
+              @click="openTelegramBot"
+            />
+            <AppButton
+              content="Оставить информацию"
+              custom-class="xl:hidden mt-4"
+              custom-inner-class="px-3"
               @click="openTelegramBot"
             />
           </div>
