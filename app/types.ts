@@ -6,5 +6,4 @@ export type FeaturesCard = {
 export type VacanciesCard = {
   text: string
   src: string
-  large?: boolean
 }
