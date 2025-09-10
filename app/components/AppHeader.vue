@@ -2,12 +2,15 @@
 const hasScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
 
+const openTelegramBot = () => {
+  window.open("https://t.me/YWRteam_job_bot", "_blank")
+}
+
 const scrollToSection = (id: string) => {
   const el = document.getElementById(id)
   if (el) {
     el.scrollIntoView({ behavior: "smooth" })
   }
-  // Close mobile menu after navigation
   closeMobileMenu()
 }
 
@@ -242,6 +245,7 @@ watch(isMobileMenuOpen, (isOpen) => {
           content="Вступить в команду"
           custom-class="text-sm"
           extended
+          @click="openTelegramBot"
         />
       </div>
     </div>
