@@ -33,7 +33,7 @@ const openTelegramBot = () => {
         width="25"
         height="25"
         viewBox="0 0 25 25"
-        :class="['transition-colors duration-300 ease-in-out', isHovered ? 'md:text-[#2C2C2C]' : 'text-[#C9FF33]']"
+        :class="['transition-colors duration-300 ease-in-out max-md:text-[#C9FF33]', isHovered ? 'md:text-[#2C2C2C]' : 'text-[#C9FF33]']"
       >
         <path
           d="M1.1817 24.3182L23.8181 1.68195M23.8181 0.68195L23.8181 17.1402M23.8181 1.68195L8.35987 1.68195"

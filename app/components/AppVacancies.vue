@@ -2,16 +2,16 @@
 import type { VacanciesCard } from "~/types"
 
 const smallCards: VacanciesCard[] = [
-  { text: "Farmer", src: "/v1.png" },
-  { text: "Motion designer", src: "/v2.png" },
-  { text: "SMM", src: "/v3.png" },
-  { text: "Sales Manager", src: "/v4.png" },
+  { text: "Farmer", src: "/v1.svg" },
+  { text: "Motion designer", src: "/v2.svg" },
+  { text: "SMM", src: "/v3.svg" },
+  { text: "Sales Manager", src: "/v4.svg" },
 ]
 
 const largeCards: VacanciesCard[] = [
-  { text: "Team lead of buying", src: "/v5.png" },
-  { text: "Media buyer (FACEBOOK)", src: "/v6.png" },
-  { text: "Media buyer (GOOGLE)", src: "/v7.png" },
+  { text: "Team lead of buying", src: "/v5.svg" },
+  { text: "Media buyer (FACEBOOK)", src: "/v6.svg" },
+  { text: "Media buyer (GOOGLE)", src: "/v7.svg" },
 ]
 </script>
 
