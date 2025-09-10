@@ -10,21 +10,37 @@ const isHovered = ref(false)
 
 <template>
   <div
-    class="bg-[#131313] border border-[#F3F3F3] flex flex-col justify-between h-[200px] px-4 py-5 relative cursor-pointer"
+    class="bg-[#131313] border border-[#F3F3F3] flex flex-col xl:justify-between h-[332px] md:h-[322px] xl:h-[200px] px-4 py-5 relative cursor-pointer"
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >
     <span class="text-[#CBCBCB] text-[26px] uppercase z-20">{{ content.number }}</span>
-    <h3 class="text-[#F3F3F3] text-[26px] uppercase font-semibold w-[75%] z-20">{{ content.text }}</h3>
+    <h3 class="text-[#F3F3F3] text-[22px] xl:text-[26px] uppercase font-semibold xl:w-[75%] z-20">
+      {{ content.text }}
+    </h3>
     <template v-if="content.number === '01'">
       <NuxtImg
-        src="/f-cloud-1.png"
-        class="absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+        src="/f-cloud-1-xl.png"
+        class="hidden xl:block absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
         :class="isHovered ? 'opacity-100' : 'opacity-0'"
       />
-      <div class="absolute -right-8 -top-8 z-10">
+      <NuxtImg
+        src="/f-cloud-1-md.png"
+        class="hidden md:block xl:hidden absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+      />
+      <NuxtImg
+        src="/f-cloud-1.png"
+        class="md:hidden absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+      />
+      <div class="absolute right-5 xl:-right-8 -bottom-7 md:-bottom-4 xl:-top-8 z-10">
+        <div class="xl:hidden relative w-[223px] h-[235px]">
+          <NuxtImg
+            src="/f-1.png"
+            class="absolute top-0 left-0 w-full h-full"
+          />
+        </div>
         <div
-          class="relative w-[226px] h-[269px] transition-opacity duration-500"
+          class="hidden xl:block relative w-[226px] h-[269px] transition-opacity duration-500"
           :class="isHovered ? 'opacity-100' : 'opacity-0'"
         >
           <NuxtImg
@@ -50,80 +66,124 @@ const isHovered = ref(false)
         </div>
       </div>
     </template>
-	  <template v-if="content.number === '02'">
+    <template v-if="content.number === '02'">
       <NuxtImg
-	      src="/f-cloud-2.png"
-	      class="absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-300"
-	      :class="isHovered ? 'opacity-100' : 'opacity-0'"
+        src="/f-cloud-2-xl.png"
+        class="hidden xl:block absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+        :class="isHovered ? 'opacity-100' : 'opacity-0'"
       />
-      <div class="absolute -right-8 -top-8 z-10 transition-opacity duration-300">
+      <NuxtImg
+        src="/f-cloud-2-md.png"
+        class="hidden md:block xl:hidden absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+      />
+      <NuxtImg
+        src="/f-cloud-2.png"
+        class="md:hidden absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+      />
+      <div class="absolute right-4 xl:-right-8 -bottom-3 xl:-top-8 z-10 transition-opacity duration-300">
+        <div class="xl:hidden relative w-[226px] h-[171px]">
+          <NuxtImg
+            src="/f-2.png"
+            class="absolute top-0 left-0 w-full h-full"
+          />
+        </div>
         <div
-	        class="relative w-[226px] h-[269px]"
-	        :class="isHovered ? 'opacity-100' : 'opacity-0'"
+          class="hidden xl:block relative w-[226px] h-[269px]"
+          :class="isHovered ? 'opacity-100' : 'opacity-0'"
         >
           <NuxtImg
-	          src="/world.svg"
-	          class="absolute right-[11px] top-0 z-10 w-[117px] h-[117px]"
+            src="/world.svg"
+            class="absolute right-[11px] top-0 z-10 w-[117px] h-[117px]"
           />
           <NuxtImg
-	          src="/location.svg"
-	          class="absolute left-[56px] top-[111px] z-10 w-[73px] h-[73px]"
+            src="/location.svg"
+            class="absolute left-[56px] top-[111px] z-10 w-[73px] h-[73px]"
           />
           <NuxtImg
-	          src="/traffic.svg"
-	          class="absolute bottom-[16px] right-[5px] w-[94px] h-[94px]"
+            src="/traffic.svg"
+            class="absolute bottom-[16px] right-[5px] w-[94px] h-[94px]"
           />
         </div>
       </div>
     </template>
-	  <template v-if="content.number === '03'">
+    <template v-if="content.number === '03'">
       <NuxtImg
-	      src="/f-cloud-3.png"
-	      class="absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-300"
-	      :class="isHovered ? 'opacity-100' : 'opacity-0'"
+        src="/f-cloud-3-xl.png"
+        class="hidden xl:block absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+        :class="isHovered ? 'opacity-100' : 'opacity-0'"
       />
-      <div class="absolute -right-8 -top-8 z-10 transition-opacity duration-300">
-        <div
-	        class="relative w-[226px] h-[269px]"
-	        :class="isHovered ? 'opacity-100' : 'opacity-0'"
-        >
-	        <NuxtImg
-		        src="/revshare.svg"
-		        class="absolute right-[27px] -top-[6px] z-10 w-[139px] h-[139px]"
-	        />
-	        <NuxtImg
-		        src="/cpa.svg"
-		        class="absolute -left-[18px] top-[51px] z-10 w-[73px] h-[73px]"
-	        />
+      <NuxtImg
+        src="/f-cloud-3-md.png"
+        class="hidden md:block xl:hidden absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+      />
+      <NuxtImg
+        src="/f-cloud-3.png"
+        class="md:hidden absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+      />
+      <div class="absolute right-4 xl:-right-8 -bottom-4 md:-bottom-2 xl:-top-8 z-10 transition-opacity duration-300">
+        <div class="xl:hidden relative w-[235px] h-[255px]">
           <NuxtImg
-	          src="/hybrid.svg"
-	          class="absolute -left-[36px] bottom-[18px] z-10 w-[122px] h-[122px]"
+            src="/f-3.png"
+            class="absolute top-0 left-0 w-full h-full"
+          />
+        </div>
+        <div
+          class="hidden xl:block relative w-[226px] h-[269px]"
+          :class="isHovered ? 'opacity-100' : 'opacity-0'"
+        >
+          <NuxtImg
+            src="/revshare.svg"
+            class="absolute right-[27px] -top-[6px] z-10 w-[139px] h-[139px]"
           />
           <NuxtImg
-	          src="/agency model.svg"
-	          class="absolute right-0 -bottom-[8px] z-10 w-[135px] h-[135px]"
+            src="/cpa.svg"
+            class="absolute -left-[18px] top-[51px] z-10 w-[73px] h-[73px]"
+          />
+          <NuxtImg
+            src="/hybrid.svg"
+            class="absolute -left-[36px] bottom-[18px] z-10 w-[122px] h-[122px]"
+          />
+          <NuxtImg
+            src="/agency model.svg"
+            class="absolute right-0 -bottom-[8px] z-10 w-[135px] h-[135px]"
           />
         </div>
       </div>
     </template>
-	  <template v-if="content.number === '04'">
+    <template v-if="content.number === '04'">
       <NuxtImg
-	      src="/f-cloud-4.png"
-	      class="absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-300"
-	      :class="isHovered ? 'opacity-100' : 'opacity-0'"
+        src="/f-cloud-4-xl.png"
+        class="hidden xl:block absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+        :class="isHovered ? 'opacity-100' : 'opacity-0'"
       />
-      <div class="absolute -right-8 -top-8 z-10 transition-opacity duration-300">
+      <NuxtImg
+        src="/f-cloud-4-md.png"
+        class="hidden md:block xl:hidden absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+      />
+      <NuxtImg
+        src="/f-cloud-4.png"
+        class="md:hidden absolute top-0 left-0 w-full h-full z-10 transition-opacity duration-500"
+      />
+      <div
+        class="absolute right-2 md:right-4 xl:-right-8 -bottom-16 md:-bottom-5 xl:-top-8 z-10 transition-opacity duration-300"
+      >
+        <div class="xl:hidden relative w-[243px] h-[235px]">
+          <NuxtImg
+            src="/f-4.png"
+            class="absolute top-0 left-0 w-full h-full"
+          />
+        </div>
         <div
-	        class="relative w-[226px] h-[269px]"
-	        :class="isHovered ? 'opacity-100' : 'opacity-0'"
+          class="hidden xl:flex relative w-[226px] h-[269px]"
+          :class="isHovered ? 'opacity-100' : 'opacity-0'"
         >
           <NuxtImg
-	          src="/day.svg"
-	          class="absolute bottom-[140px] right-[140px] w-[147px] h-[147px]"
+            src="/day.svg"
+            class="absolute bottom-[140px] right-[140px] w-[147px] h-[147px]"
           />
           <NuxtImg
-	          src="/month.svg"
-	          class="absolute bottom-[0px] left-[50px] w-[181px] h-[181px]"
+            src="/month.svg"
+            class="absolute bottom-[0px] left-[50px] w-[181px] h-[181px]"
           />
         </div>
       </div>

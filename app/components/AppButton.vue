@@ -3,6 +3,7 @@ defineProps<{
   content: string
   extended?: boolean
   customClass?: string
+  customInnerClass?: string
 }>()
 </script>
 
@@ -12,7 +13,8 @@ defineProps<{
     :class="customClass"
   >
     <span
-      class="px-7 py-2 font-[Open_Sans] flex items-center justify-center font-bold text-[#0F0F0F] bg-[#C9FF33] md:bg-[#F3F3F3] h-10 rounded-[1px]"
+      class="py-2 font-[Open_Sans] flex items-center justify-center font-bold text-[#0F0F0F] bg-[#C9FF33] md:bg-[#F3F3F3] h-10 rounded-[1px]"
+      :class="customInnerClass ? customInnerClass : 'px-7'"
     >
       <span class="relative z-10">{{ content }}</span>
     </span>
