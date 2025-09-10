@@ -35,8 +35,24 @@ const isHovered = ref(false)
       <div class="absolute right-5 xl:-right-8 -bottom-7 md:-bottom-4 xl:-top-8 z-10">
         <div class="xl:hidden relative w-[223px] h-[235px]">
           <NuxtImg
-            src="/f-1.svg"
-            class="absolute top-0 left-0 w-full h-full"
+            src="/facebook.svg"
+            class="absolute left-4 top-8 z-10 w-[75px] h-[75px]"
+          />
+          <NuxtImg
+	          src="/google.svg"
+	          class="absolute right-4 top-2 z-10 w-[100px] h-[100px]"
+          />
+          <NuxtImg
+	          src="/google play.svg"
+	          class="absolute left-[72px] top-[92px] z-10 w-[60px] h-[60px]"
+          />
+          <NuxtImg
+	          src="/seo.svg"
+	          class="absolute right-3 bottom-10 z-10 w-[82px] h-[82px]"
+          />
+          <NuxtImg
+	          src="/app.svg"
+	          class="absolute left-10 bottom-2 z-10 w-[77px] h-[77px]"
           />
         </div>
         <div
@@ -83,8 +99,16 @@ const isHovered = ref(false)
       <div class="absolute right-4 xl:-right-8 -bottom-3 xl:-top-8 z-10 transition-opacity duration-300">
         <div class="xl:hidden relative w-[226px] h-[171px]">
           <NuxtImg
-            src="/f-2.svg"
-            class="absolute top-0 left-0 w-full h-full"
+	          src="/world.svg"
+	          class="absolute left-0 top-5 z-10 w-[117px] h-[117px]"
+          />
+          <NuxtImg
+	          src="/location.svg"
+	          class="absolute right-3 top-0 z-10 w-[73px] h-[73px]"
+          />
+          <NuxtImg
+	          src="/traffic.svg"
+	          class="absolute bottom-0 right-4 w-[94px] h-[94px]"
           />
         </div>
         <div
@@ -123,8 +147,20 @@ const isHovered = ref(false)
       <div class="absolute right-4 xl:-right-8 -bottom-4 md:-bottom-2 xl:-top-8 z-10 transition-opacity duration-300">
         <div class="xl:hidden relative w-[235px] h-[255px]">
           <NuxtImg
-            src="/f-3.svg"
-            class="absolute top-0 left-0 w-full h-full"
+	          src="/revshare.svg"
+	          class="absolute right-0 top-0 z-10 w-[124px] h-[124px]"
+          />
+          <NuxtImg
+	          src="/cpa.svg"
+	          class="absolute left-9 top-6 z-10 w-[66px] h-[66px]"
+          />
+          <NuxtImg
+	          src="/hybrid.svg"
+	          class="absolute left-2 bottom-12 z-10 w-[110px] h-[110px]"
+          />
+          <NuxtImg
+	          src="/agency model.svg"
+	          class="absolute right-0 bottom-0 z-10 w-[122px] h-[122px]"
           />
         </div>
         <div
@@ -169,8 +205,12 @@ const isHovered = ref(false)
       >
         <div class="xl:hidden relative w-[243px] h-[235px]">
           <NuxtImg
-            src="/f-4.svg"
-            class="absolute top-0 left-0 w-full h-full"
+	          src="/day.svg"
+	          class="absolute top-0 left-0 w-[124px] h-[124px]"
+          />
+          <NuxtImg
+	          src="/month.svg"
+	          class="absolute bottom-1 right-1 w-[144px] h-[144px]"
           />
         </div>
         <div

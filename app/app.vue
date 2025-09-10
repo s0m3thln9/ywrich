@@ -1,15 +1,45 @@
 <script setup lang="ts">
 import gsap from "gsap"
 
-onMounted(() => {
-  const tl = gsap.timeline({ defaults: { duration: 1.5, ease: "power3.out" } })
+const currentBp = ref(getBreakpoint())
 
-  tl.from(".light", { x: -200, opacity: 0 })
-    .from(".cloud-1", { x: 200, opacity: 0 }, "-=1")
-    .from(".cloud-2", { x: 200, opacity: 0 }, "-=1.2")
-    .from(".man", { x: 200, opacity: 0 }, "-=1.2")
+function getBreakpoint() {
+	const w = window.innerWidth
+	if (w >= 1280) return "xl"
+	if (w >= 768) return "md"
+	return "sm"
+}
+
+function runAnimation() {
+	gsap.killTweensOf([".light", ".cloud-1", ".cloud-2", ".man"])
+	gsap.set([".light", ".cloud-1", ".cloud-2", ".man"], { clearProps: "all" })
+	
+	const tl = gsap.timeline({ defaults: { duration: 1.5, ease: "power3.out" } })
+	
+	tl.from(".light", { x: -200, opacity: 0 })
+		.from(".cloud-1", { x: 200, opacity: 0 }, "-=1")
+		.from(".cloud-2", { x: 200, opacity: 0 }, "-=1.2")
+		.from(".man", { x: 200, opacity: 0 }, "-=1.2")
+}
+
+function handleResize() {
+	const newBp = getBreakpoint()
+	if (newBp !== currentBp.value) {
+		currentBp.value = newBp
+		runAnimation()
+	}
+}
+
+onMounted(() => {
+	runAnimation()
+	window.addEventListener("resize", handleResize)
+})
+
+onUnmounted(() => {
+	window.removeEventListener("resize", handleResize)
 })
 </script>
+
 
 <template>
   <div class="relative overflow-hidden">

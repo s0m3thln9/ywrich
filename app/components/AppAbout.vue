@@ -7,7 +7,7 @@ const openTelegramBot = () => {
 <template>
   <div
     id="about"
-    class="relative pt-4 md:pt-24 px-6 md:px-8 xl:px-0 flex items-center justify-center select-none"
+    class="relative pt-16 md:pt-24 px-6 md:px-8 xl:px-0 flex items-center justify-center select-none"
   >
     <NuxtImg
       src="/light-2.png"

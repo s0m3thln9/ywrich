@@ -6,7 +6,7 @@ const openTelegramBot = () => {
 
 <template>
   <div
-    class="pt-[140px] md:pt-[200px] xl:pt-[180px] pb-12 px-6 md:px-8 xl:px-0 flex items-center justify-center select-none"
+    class="pt-[140px] md:pt-[200px] xl:pt-[180px] px-6 md:px-8 xl:px-0 flex items-center justify-center select-none"
   >
     <div class="max-w-[1170px] w-full">
       <div class="flex flex-col">

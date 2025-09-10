@@ -42,7 +42,7 @@ const scrollToTop = () => {
           >
             О нас
             <div
-              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 md:group-hover:opacity-100"
             />
           </li>
           <li
@@ -51,7 +51,7 @@ const scrollToTop = () => {
           >
             Рекламодателям
             <div
-              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 md:group-hover:opacity-100"
             />
           </li>
           <li
@@ -60,7 +60,7 @@ const scrollToTop = () => {
           >
             Плюсы
             <div
-              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 md:group-hover:opacity-100"
             />
           </li>
           <li
@@ -69,7 +69,7 @@ const scrollToTop = () => {
           >
             Вакансии
             <div
-              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              class="absolute bottom-0 left-0 w-full h-0.5 bg-[#C9FF33] opacity-0 transition-opacity duration-300 md:group-hover:opacity-100"
             />
           </li>
         </ul>

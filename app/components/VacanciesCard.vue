@@ -14,7 +14,7 @@ const openTelegramBot = () => {
 
 <template>
   <div
-    class="flex flex-col gap-5 pb-5 cursor-pointer bg-[#131313] hover:bg-[#C9FF33] border border-[#F3F3F3] hover:border-[#C9FF33] text-[#F3F3F3] hover:text-[#101010] z-20 transition-all duration-300"
+    class="flex flex-col gap-5 pb-5 cursor-pointer bg-[#131313] md:hover:bg-[#C9FF33] border border-[#F3F3F3] md:hover:border-[#C9FF33] text-[#F3F3F3] md:hover:text-[#101010] z-20 transition-all duration-300"
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
     @click="openTelegramBot"
@@ -33,7 +33,7 @@ const openTelegramBot = () => {
         width="25"
         height="25"
         viewBox="0 0 25 25"
-        :class="['transition-colors duration-300 ease-in-out', isHovered ? 'text-[#2C2C2C]' : 'text-[#C9FF33]']"
+        :class="['transition-colors duration-300 ease-in-out', isHovered ? 'md:text-[#2C2C2C]' : 'text-[#C9FF33]']"
       >
         <path
           d="M1.1817 24.3182L23.8181 1.68195M23.8181 0.68195L23.8181 17.1402M23.8181 1.68195L8.35987 1.68195"
