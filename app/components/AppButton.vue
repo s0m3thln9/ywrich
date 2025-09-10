@@ -11,7 +11,9 @@ defineProps<{
     class="flex items-center gap-1 w-fit relative overflow-hidden group select-none"
     :class="customClass"
   >
-    <span class="px-7 py-2 font-[Open_Sans] font-bold text-[#0F0F0F] bg-[#F3F3F3] rounded-[1px]">
+    <span
+      class="px-7 py-2 font-[Open_Sans] flex items-center justify-center font-bold text-[#0F0F0F] bg-[#F3F3F3] h-10 rounded-[1px]"
+    >
       <span class="relative z-10">{{ content }}</span>
     </span>
     <span
