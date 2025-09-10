@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import gsap from "gsap"
 
-const currentBp = ref(getBreakpoint())
+const currentBp = ref("sm")
 
 function getBreakpoint() {
+	if (typeof window === "undefined") return "sm"
 	const w = window.innerWidth
 	if (w >= 1280) return "xl"
 	if (w >= 768) return "md"
@@ -15,7 +16,6 @@ function runAnimation() {
 	gsap.set([".light", ".cloud-1", ".cloud-2", ".man"], { clearProps: "all" })
 	
 	const tl = gsap.timeline({ defaults: { duration: 1.5, ease: "power3.out" } })
-	
 	tl.from(".light", { x: -200, opacity: 0 })
 		.from(".cloud-1", { x: 200, opacity: 0 }, "-=1")
 		.from(".cloud-2", { x: 200, opacity: 0 }, "-=1.2")
@@ -31,6 +31,7 @@ function handleResize() {
 }
 
 onMounted(() => {
+	currentBp.value = getBreakpoint()
 	runAnimation()
 	window.addEventListener("resize", handleResize)
 })
