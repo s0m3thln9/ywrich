@@ -2,15 +2,15 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: [
-    "@nuxt/eslint",
-    "@nuxt/fonts",
-    "@nuxt/image",
-    "@nuxtjs/tailwindcss",
-  ],
+  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/image", "@nuxtjs/tailwindcss"],
   fonts: {
     defaults: {
       weights: [400, 600, 700, 800, 900],
+    },
+  },
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://ywr-team.com",
     },
   },
 })

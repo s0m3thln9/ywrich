@@ -8,22 +8,40 @@ defineProps<{
 const isHovered = ref(false)
 
 const openTelegramBot = () => {
-  window.open("https://t.me/YWRteam_job_bot", "_blank")
+  try {
+    window.open("https://t.me/YWRteam_job_bot", "_blank", "noopener,noreferrer")
+  } catch (error) {
+    console.error("Ошибка при открытии Telegram бота:", error)
+  }
+}
+
+const handleKeydown = (event: KeyboardEvent) => {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault()
+    openTelegramBot()
+  }
 }
 </script>
 
 <template>
   <div
+    role="button"
+    tabindex="0"
+    :aria-label="`Откликнуться на вакансию: ${content.text}`"
     class="flex flex-col gap-5 pb-5 cursor-pointer bg-[#131313] md:hover:bg-[#C9FF33] border border-[#F3F3F3] md:hover:border-[#C9FF33] text-[#F3F3F3] md:hover:text-[#101010] z-20 transition-all duration-300"
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
     @click="openTelegramBot"
+    @keydown="handleKeydown"
   >
     <div class="flex flex-col bg-[#131313]">
       <NuxtImg
         :src="content.src"
+        :alt="`Иконка вакансии ${content.text}`"
         draggable="false"
         class="w-[292px] h-[240px] mx-auto"
+        loading="eager"
+        role="img"
       />
     </div>
     <div class="flex items-center justify-between p-4">
@@ -33,7 +51,12 @@ const openTelegramBot = () => {
         width="25"
         height="25"
         viewBox="0 0 25 25"
-        :class="['transition-colors duration-300 ease-in-out max-md:text-[#C9FF33]', isHovered ? 'md:text-[#2C2C2C]' : 'text-[#C9FF33]']"
+        aria-hidden="true"
+        focusable="false"
+        :class="[
+          'transition-colors duration-300 ease-in-out max-md:text-[#C9FF33]',
+          isHovered ? 'md:text-[#2C2C2C]' : 'text-[#C9FF33]',
+        ]"
       >
         <path
           d="M1.1817 24.3182L23.8181 1.68195M23.8181 0.68195L23.8181 17.1402M23.8181 1.68195L8.35987 1.68195"
