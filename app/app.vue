@@ -9,8 +9,8 @@ const structuredData = {
   "@type": "Organization",
   name: "YWR Team",
   description: "Международная медиабаинговая компания, лидер в i-Gaming",
-  url: "https://ywr-team.com",
-  logo: "https://ywr-team.com/logo.png",
+  url: "https://ywrteam.com",
+  logo: "https://ywrteam.com/logo.svg",
   sameAs: ["https://www.instagram.com/ywr_traffic?igsh=cDdjMXUxMm5jeXpl&utm_source=qr", "https://t.me/ywrteam"],
   contactPoint: {
     "@type": "ContactPoint",

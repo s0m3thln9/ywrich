@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://ywr-team.com",
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://ywrteam.com",
     },
   },
 })
