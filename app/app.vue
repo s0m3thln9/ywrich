@@ -1,16 +1,13 @@
 <script setup lang="ts">
 import gsap from "gsap"
 
-const runtimeConfig = useRuntimeConfig()
-const baseUrl = import.meta.client ? window.location.origin : runtimeConfig.public.siteUrl || "https://ywr-team.com"
-
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "YWR Team",
   description: "Международная медиабаинговая компания, лидер в i-Gaming",
-  url: "https://ywrteam.com",
-  logo: "https://ywrteam.com/logo.svg",
+  url: "https://ywrich.com",
+  logo: "https://ywrich.com/logo.svg",
   sameAs: ["https://www.instagram.com/ywr_traffic?igsh=cDdjMXUxMm5jeXpl&utm_source=qr", "https://t.me/ywrteam"],
   contactPoint: {
     "@type": "ContactPoint",
@@ -28,18 +25,18 @@ useSeoMeta({
   ogTitle: "YWR Team - Международная медиабаинговая компания i-Gaming",
   ogDescription:
     "Мы заставляем клиентов становиться лучше благодаря нестандартным стратегиям продвижения. Лидеры арбитража трафика в i-Gaming с глобальным охватом.",
-  ogImage: `${baseUrl}/og.png`,
+  ogImage: `https://ywrich.com/og.png`,
   ogImageWidth: "1200",
   ogImageHeight: "630",
   ogImageAlt: "YWR Team - логотип компании",
-  ogUrl: baseUrl,
+  ogUrl: "https://ywrich.com",
   ogType: "website",
   ogSiteName: "YWR Team",
   ogLocale: "ru_RU",
   twitterTitle: "YWR Team - Лидер медиабаинга в i-Gaming",
   twitterDescription:
     "Международная медиабаинговая компания. Нестандартные стратегии, эффективный арбитраж трафика, работа по всему миру.",
-  twitterImage: `${baseUrl}/twitter.png`,
+  twitterImage: `https://ywrich.com/twitter.png`,
   twitterImageAlt: "YWR Team - превью для Twitter",
   twitterCard: "summary_large_image",
   twitterSite: "@ywr_team",
